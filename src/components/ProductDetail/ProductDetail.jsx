@@ -269,7 +269,7 @@ export default function ProductDetail() {
               </button>
             </div>
 
-            <div className="grid sm:grid-cols-3 gap-4 pt-4 text-center text-sm text-[#5b4637]">
+            <div className="grid sm:grid-cols-3 mb-28 gap-4 pt-4 text-center text-sm text-[#5b4637]">
               <div>
                 <div className="text-xs uppercase text-[#a67856]">Size</div>
                 <div className="font-semibold">250g</div>
