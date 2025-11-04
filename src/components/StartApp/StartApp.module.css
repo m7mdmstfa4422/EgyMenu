@@ -1,0 +1,128 @@
+/* StartApp.module.css */
+.container {
+    position: relative;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 1.5rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+    text-align: center;
+    color: white;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.ctaButton {
+    width: 85%;
+    padding: 1rem;
+    border-radius: 16px;
+    background-color: #c67c4e;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+    background-color: #b56a3d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(198, 124, 78, 0.3);
+}
+
+/* وسائط استعلام للتكيف مع الشاشات المختلفة */
+@media (min-width: 768px) {
+    .imageContainer {
+        height: 75vh;
+    }
+    
+    .content {
+        padding: 2.5rem;
+    }
+    
+    .title {
+        font-size: 2.25rem;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .description {
+        font-size: 1.1rem;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .ctaButton {
+        width: 60%;
+        max-width: 300px;
+        padding: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .imageContainer {
+        width: 50%;
+        height: 100%;
+    }
+    
+    .content {
+        position: static;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        padding: 3rem;
+        background: black;
+    }
+    
+    .title, .description {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    }
+}
